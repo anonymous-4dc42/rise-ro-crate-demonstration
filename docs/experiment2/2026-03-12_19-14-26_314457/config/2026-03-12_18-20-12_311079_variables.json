@@ -1,0 +1,61 @@
+{
+    "loop": {
+        "filesize": [
+            536870912
+        ],
+        "implementation": [
+            "lsquic",
+            "picoquic"
+        ],
+        "bandwidth_limit": [
+            "250mbit",
+            "500mbit",
+            "750mbit",
+            "1000mbit",
+            "1250mbit",
+            "1500mbit",
+            "1750mbit",
+            "2000mbit"
+        ],
+        "repetition": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+        ]
+    },
+    "nida": {},
+    "cesis": {},
+    "global": {
+        "nodes": {
+            "cesis": {
+                "image": "debian-bookworm",
+                "role": "server",
+                "hostname": "server",
+                "interfaces": [
+                    {
+                        "name": "enp5s0f1",
+                        "ip": "10.0.0.2/24"
+                    }
+                ]
+            },
+            "nida": {
+                "image": "debian-bookworm",
+                "role": "client",
+                "hostname": "client",
+                "interfaces": [
+                    {
+                        "name": "enp131s0f1",
+                        "ip": "10.0.0.1/24"
+                    }
+                ]
+            }
+        }
+    }
+}

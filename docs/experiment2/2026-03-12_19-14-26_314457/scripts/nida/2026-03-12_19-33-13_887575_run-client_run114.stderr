@@ -1,0 +1,44 @@
+++ hostname
++ HOSTNAME=nida
+++ pos_get_variable --from-loop implementation
++ IMPLEMENTATION=lsquic
+++ pos_get_variable --from-global nodes/nida/interfaces
+++ grep -oP ''\''name'\'': '\''\K[^'\'']+'
+++ head -1
++ IFNAME=enp131s0f1
++ DL_DIR=/root/downloads
++ LOG_DIR=/root/logs
++ DLPATH=/testfile
++ REQ=https://server:4433/testfile
++ LOG=/root/logs/log.txt
++ SSLKEYLOGFILE=/root/logs/keys.log
++ VALID_IMPLS=("quiche" "tquic" "lsquic" "picoquic" "aioquic" "quic-go")
++ DEFAULT_IMPL=quiche
++ [[ !  quiche tquic lsquic picoquic aioquic quic-go  =~  lsquic  ]]
++ mkdir -p /root/downloads
++ mkdir -p /root/logs
++ echo 'Client started, waiting for server to be ready...'
++ pos_sync --tag server_ready
++ echo 'Server ready, starting client...'
+++ date +%s%N
++ start=1773343150374991141
++ pos_energy_start --loop --filename client_measurement
++ '[' -n lsquic ']'
++ case "$IMPLEMENTATION" in
++ /root/lsquic-client -p /testfile -7 /root/downloads -H server -s server:4433 -G /root/logs
+20:19:12.365 [NOTICE] QL loss bits turned off because of -G.  If you want to turn it on, just override: -G dir -o ql_bits=2
+20:19:12.371 [NOTICE] downloading /testfile to /root/downloads//testfile
+++ date +%s%N
++ end=1773343159618759788
++ echo '{"start":' 1773343150374991141, '"end":' '1773343159618759788}'
++ sed -i 1,3d /root/downloads/testfile
++ echo 'Client finished, telling server...'
++ pos_sync --tag client_finished
++ TESTFILE=/root/downloads/testfile
++ '[' -f /root/downloads/testfile ']'
++ sha1sum /root/downloads/testfile
++ awk '{print $1}'
++ pos_energy_stop
++ pos_upload -f -l -t 30 -o logs -r /root/logs
++ rm -r /root/downloads
++ rm -r /root/logs
