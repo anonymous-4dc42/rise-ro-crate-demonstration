@@ -1,0 +1,15 @@
+{
+    "elva.anonymous.testbed": [
+        {
+            "inf_a": "enp4s0",
+            "inf_b": "enp7s0",
+            "mac_a": "24:5e:be:84:32:63",
+            "mac_b": "24:5e:be:84:32:62",
+            "type": "loop_link_full_duplex",
+            "properties": {
+                "speed": "2p5GigT - 2.5GBASE-T Four-pair twisted-pair balanced copper cabling PHY",
+                "device_b": "server"
+            }
+        }
+    ]
+}

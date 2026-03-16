@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+import os
+import csv
+import subprocess
+from datetime import datetime
+
+import matplotlib.pyplot as plt
+import matplotlib.lines as mlines
+from matplotlib.ticker import MultipleLocator
+
+RESULTS_DIR = "evaluation_cpu_load"
+
+
+def find_energy_csv(path):
+    if not os.path.isdir(path):
+        return None
+    for f in os.listdir(path):
+        if f.startswith("energy_") and f.endswith(".csv"):
+            return os.path.join(path, f)
+    return None
+
+
+def discover_nodes():
+    files_dir = os.path.join(RESULTS_DIR, "files")
+    energy_dir = os.path.join(RESULTS_DIR, "energy")
+    if not os.path.isdir(files_dir):
+        return []
+
+    nodes = []
+    for name in sorted(os.listdir(files_dir)):
+        node_dir = os.path.join(files_dir, name)
+        temp_csv = os.path.join(node_dir, "cpu_temp.csv")
+        energy_csv = find_energy_csv(os.path.join(energy_dir, name))
+        if os.path.isdir(node_dir) and os.path.isfile(temp_csv) and energy_csv:
+            nodes.append((name, energy_csv))
+    return nodes
+
+
+def parse_energy_ts(ts):
+    return datetime.strptime(ts[:14], "%Y%m%d%H%M%S").replace(
+        microsecond=int(ts[14:])
+    )
+
+
+def load_temp(node):
+    path = os.path.join(RESULTS_DIR, "files", node, "cpu_temp.csv")
+    times, temps = [], []
+    with open(path) as f:
+        for row in csv.DictReader(f):
+            times.append(datetime.fromisoformat(row["timestamp"]))
+            temps.append(float(row["CPU_temp_C"]))
+    return times, temps
+
+
+def load_energy(path):
+    times, power = [], []
+    with open(path) as f:
+        for row in csv.DictReader(f):
+            times.append(parse_energy_ts(row["timestamp"]))
+            power.append(float(row["power_active_W"]))
+    return times, power
+
+
+def to_seconds(times, t0):
+    return [(t - t0).total_seconds() for t in times]
+
+
+def main():
+    print("Starting evaluation")
+    nodes = discover_nodes()
+    if not nodes:
+        print("No nodes with both cpu_temp.csv and energy data found")
+        return
+
+    colors = plt.cm.tab10.colors
+    fig, ax1 = plt.subplots(figsize=(12, 6))
+    ax2 = ax1.twinx()
+    t_max = 0
+
+    for i, (node, energy_csv) in enumerate(nodes):
+        c = colors[i % len(colors)]
+
+        print(f"Loading data for node {node}")
+        temp_t, temps = load_temp(node)
+        nrg_t, power = load_energy(energy_csv)
+
+        t0 = min(temp_t[0], nrg_t[0])
+        ts = to_seconds(temp_t, t0)
+        es = to_seconds(nrg_t, t0)
+        t_max = max(t_max, ts[-1], es[-1])
+
+        ax1.plot(ts, temps, color=c, lw=1.5, ls="-", marker="o", ms=3)
+        ax2.plot(es, power, color=c, lw=1.5, ls="--", marker="^", ms=4)
+
+    ax1.set_xlabel("Measurement Time [s]")
+    ax1.set_ylabel("CPU Temperature [°C]")
+    ax2.set_ylabel("Power [W]")
+    ax1.set_xlim(0, t_max)
+    ax1.set_ylim(bottom=0, top=ax1.get_ylim()[1] * 1.15)
+    ax2.set_ylim(bottom=0, top=ax2.get_ylim()[1] * 1.15)
+    ax1.xaxis.set_major_locator(MultipleLocator(10))
+    ax1.yaxis.set_major_locator(MultipleLocator(5))
+    ax2.yaxis.set_major_locator(MultipleLocator(25))
+    ax1.grid(True, alpha=0.3)
+
+    # build legend: group by node with temp + power entries
+    handles, labels = [], []
+    for i, (node, _) in enumerate(nodes):
+        c = colors[i % len(colors)]
+        handles.append(mlines.Line2D([], [], ls="none"))
+        labels.append(node)
+        handles.append(mlines.Line2D([], [], color=c, ls="-", marker="o", ms=3))
+        labels.append("CPU Temp")
+        handles.append(mlines.Line2D([], [], color=c, ls="--", marker="^", ms=4))
+        labels.append("Power")
+    ax1.legend(handles, labels, loc="upper left", ncol=len(nodes), fontsize=9)
+
+    fig.suptitle("Impact of CPU Load on Temperature and Power Consumption",
+                 fontsize=14, fontweight="bold")
+    plt.tight_layout()
+    print("Plot generation finished")
+
+    out = "evaluation_cpu_load"
+    print(f"Saving plot as {out}.png and {out}.pdf")
+    plt.savefig(out + ".png", dpi=300)
+    plt.savefig(out + ".pdf", dpi=300)
+    plt.show()
+    print("Evaluation finished")
+
+
+if __name__ == "__main__":
+    main()
+    subprocess.Popen(["pos_upload", "evaluation_cpu_load.png"]).wait()
+    subprocess.Popen(["pos_upload", "evaluation_cpu_load.pdf"]).wait()
+
+

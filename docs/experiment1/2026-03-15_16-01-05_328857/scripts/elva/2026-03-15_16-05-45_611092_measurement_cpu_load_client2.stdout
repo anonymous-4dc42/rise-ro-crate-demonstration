@@ -1,0 +1,13 @@
+Waiting for all experiment nodes to be ready
+Initializing CSV file for temperature measurements
+Finding thermal zone for CPU package temp
+Starting temperature logging in the background
+Starting energy measurement
+Waiting for warmup duration (20 s)
+Starting CPU load workload (0 cores)
+Waiting for measurement duration (40 s)
+Stopping CPU load workload
+Waiting for cooldown duration (20 s)
+Stopping energy measurement
+Stopping temperature logging
+Uploading CSV file of temperature measurements

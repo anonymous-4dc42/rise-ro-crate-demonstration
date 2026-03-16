@@ -1,0 +1,20 @@
+{
+    "elva": {},
+    "loop": {},
+    "dagda": {},
+    "valga": {},
+    "global": {
+        "cpu_load": {
+            "stress_cores": 0,
+            "duration_warmup": 20,
+            "duration_measurement": 40,
+            "duration_cooldown": 20
+        },
+        "nodes": {
+            "client1": "dagda",
+            "client2": "elva",
+            "client3": "valga",
+            "image": "debian-trixie"
+        }
+    }
+}

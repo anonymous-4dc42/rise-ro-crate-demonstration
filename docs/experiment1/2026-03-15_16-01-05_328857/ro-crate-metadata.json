@@ -1,0 +1,1910 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.2/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "archivedAt": [
+                {
+                    "@id": "https://doi.org/10.5281/zenodo.19035667"
+                }
+            ],
+            "author": [
+                {
+                    "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+                }
+            ],
+            "conformsTo": {
+                "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/"
+            },
+            "contributor": [
+                {
+                    "@id": "https://credit.niso.org/contributor-roles/investigation/"
+                }
+            ],
+            "dateCreated": "2026-03-15T16:01:05.360610",
+            "dateModified": "2026-03-15T16:09:25.098725",
+            "datePublished": "2026-03-15T15:01:05+00:00",
+            "description": "The experiment measured the impact of CPU load on temperature and power consumption. For the measurement, we used the SLICES RI with the three experiment nodes 'dagda', 'elva' and 'valga'. Each node ran stress-ng to generate CPU load while recording CPU temperature and energy consumption over time.",
+            "hasPart": [
+                {
+                    "@id": "config/valga/hardware.json"
+                },
+                {
+                    "@id": "config/valga/topology.json"
+                },
+                {
+                    "@id": "config/valga/topology.pdf"
+                },
+                {
+                    "@id": "config/elva/hardware.json"
+                },
+                {
+                    "@id": "config/elva/topology.json"
+                },
+                {
+                    "@id": "config/elva/topology.pdf"
+                },
+                {
+                    "@id": "config/dagda/hardware.json"
+                },
+                {
+                    "@id": "config/dagda/topology.pdf"
+                },
+                {
+                    "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.stdout"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.stderr"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.status"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.status"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.stdout"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.stderr"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.status"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.stdout"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.stderr"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.status"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.status"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.stdout"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.stderr"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.status"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.stdout"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.stderr"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.status"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.stdout"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.stderr"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.stdout"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.stderr"
+                },
+                {
+                    "@id": "energy/dagda/energy_cpu_load.csv"
+                },
+                {
+                    "@id": "energy/elva/energy_cpu_load.csv"
+                },
+                {
+                    "@id": "files/dagda/cpu_temp.csv"
+                },
+                {
+                    "@id": "energy/valga/energy_cpu_load.csv"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.stdout"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.stderr"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.status"
+                },
+                {
+                    "@id": "files/elva/cpu_temp.csv"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.stdout"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.stderr"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.status"
+                },
+                {
+                    "@id": "files/valga/cpu_temp.csv"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.stdout"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.stderr"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.status"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.stdout"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.stderr"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.status"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.stdout"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.stderr"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.status"
+                },
+                {
+                    "@id": "files/dagda/evaluation_cpu_load.png"
+                },
+                {
+                    "@id": "files/dagda/evaluation_cpu_load.pdf"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.stdout"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.stderr"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.status"
+                },
+                {
+                    "@id": "CITATION.cff"
+                }
+            ],
+            "keywords": [
+                "measurement",
+                "cpu",
+                "load",
+                "temperature",
+                "power",
+                "consumption"
+            ],
+            "mainEntity": {
+                "@id": "config/allocation.json"
+            },
+            "name": "RISE Demonstration Experiment 1: Impact of CPU Load on Temperature and Power Consumption"
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.2"
+            }
+        },
+        {
+            "@id": "config/valga/hardware.json",
+            "@type": "File",
+            "contentSize": "24340",
+            "dateCreated": "2026-03-15T16:01:07.090696",
+            "dateModified": "2026-03-15T16:01:07.044749",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node valga"
+        },
+        {
+            "@id": "config/valga/topology.json",
+            "@type": "File",
+            "contentSize": "2899",
+            "dateCreated": "2026-03-15T16:01:07.122012",
+            "dateModified": "2026-03-15T16:09:00.136672",
+            "description": "Contains network topology with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Network topology of testbed node valga"
+        },
+        {
+            "@id": "config/valga/topology.pdf",
+            "@type": "File",
+            "contentSize": "65676",
+            "dateCreated": "2026-03-15T16:01:07.165919",
+            "dateModified": "2026-03-15T16:01:07.160754",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "Network topology of testbed node valga"
+        },
+        {
+            "@id": "config/elva/hardware.json",
+            "@type": "File",
+            "contentSize": "17304",
+            "dateCreated": "2026-03-15T16:01:06.675815",
+            "dateModified": "2026-03-15T16:01:06.664734",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node elva"
+        },
+        {
+            "@id": "config/elva/topology.json",
+            "@type": "File",
+            "contentSize": "431",
+            "dateCreated": "2026-03-15T16:01:06.681367",
+            "dateModified": "2026-03-15T16:09:00.132672",
+            "description": "Contains network topology with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Network topology of testbed node elva"
+        },
+        {
+            "@id": "config/elva/topology.pdf",
+            "@type": "File",
+            "contentSize": "42683",
+            "dateCreated": "2026-03-15T16:01:06.685097",
+            "dateModified": "2026-03-15T16:01:06.680734",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "Network topology of testbed node elva"
+        },
+        {
+            "@id": "config/dagda/hardware.json",
+            "@type": "File",
+            "contentSize": "16670",
+            "dateCreated": "2026-03-15T16:01:06.297152",
+            "dateModified": "2026-03-15T16:01:06.288718",
+            "description": "Contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "name": "Hardware of testbed node dagda"
+        },
+        {
+            "@id": "config/dagda/topology.pdf",
+            "@type": "File",
+            "contentSize": "45014",
+            "dateCreated": "2026-03-15T16:01:06.303456",
+            "dateModified": "2026-03-15T16:01:06.300718",
+            "description": "contains network topology figure with neighboring nodes including link speed",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+            },
+            "name": "Network topology of testbed node dagda"
+        },
+        {
+            "@id": "config/2026-03-15_16-01-07_496121_variables.json",
+            "@type": "File",
+            "contentSize": "427",
+            "dateCreated": "2026-03-15T16:01:07.496121",
+            "dateModified": "2026-03-15T16:01:07.492768",
+            "description": "Contains a variable set for the allocation as of 2026-03-15_16-01-07_496121.",
+            "encodingFormat": {
+                "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+            },
+            "keywords": [
+                "variables"
+            ],
+            "name": "VariableSet"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "13057",
+            "dateCreated": "2026-03-15T16:03:17.346950",
+            "dateModified": "2026-03-15T16:03:22.066435",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "1075",
+            "dateCreated": "2026-03-15T16:03:17.346950",
+            "dateModified": "2026-03-15T16:09:00.160673",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:03:17.346950",
+            "dateModified": "2026-03-15T16:03:22.470453",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-15T16:01:08.480839",
+            "dateModified": "2026-03-15T16:03:22.834468",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-15T16:01:08.480839",
+            "dateModified": "2026-03-15T16:03:22.834468",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:01:08.480839",
+            "dateModified": "2026-03-15T16:03:22.838468",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "13057",
+            "dateCreated": "2026-03-15T16:03:21.403505",
+            "dateModified": "2026-03-15T16:03:26.114606",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "1077",
+            "dateCreated": "2026-03-15T16:03:21.403505",
+            "dateModified": "2026-03-15T16:09:00.164673",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:03:21.403505",
+            "dateModified": "2026-03-15T16:03:26.542624",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-15T16:01:08.480711",
+            "dateModified": "2026-03-15T16:03:26.830636",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-15T16:01:08.480711",
+            "dateModified": "2026-03-15T16:03:26.830636",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:01:08.480711",
+            "dateModified": "2026-03-15T16:03:26.834636",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.stdout",
+            "@type": "File",
+            "contentSize": "13057",
+            "dateCreated": "2026-03-15T16:05:27.456597",
+            "dateModified": "2026-03-15T16:05:32.275919",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.stderr",
+            "@type": "File",
+            "contentSize": "1077",
+            "dateCreated": "2026-03-15T16:05:27.456597",
+            "dateModified": "2026-03-15T16:09:00.156673",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:05:27.456597",
+            "dateModified": "2026-03-15T16:05:32.759939",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.file"
+            },
+            "name": "bootstrap"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-15T16:01:08.477549",
+            "dateModified": "2026-03-15T16:05:33.079952",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-15T16:01:08.477549",
+            "dateModified": "2026-03-15T16:05:33.079952",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:01:08.477549",
+            "dateModified": "2026-03-15T16:05:33.079952",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.command"
+            },
+            "name": "reset"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.stdout",
+            "@type": "File",
+            "contentSize": "11835",
+            "dateCreated": "2026-03-15T16:05:35.421937",
+            "dateModified": "2026-03-15T16:09:00.164673",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.file"
+            },
+            "name": "measurement_setup_client3"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.stderr",
+            "@type": "File",
+            "contentSize": "164",
+            "dateCreated": "2026-03-15T16:05:35.421937",
+            "dateModified": "2026-03-15T16:05:44.200421",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.file"
+            },
+            "name": "measurement_setup_client3"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:05:35.421937",
+            "dateModified": "2026-03-15T16:05:44.204421",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.file"
+            },
+            "name": "measurement_setup_client3"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.stdout",
+            "@type": "File",
+            "contentSize": "11838",
+            "dateCreated": "2026-03-15T16:05:33.449885",
+            "dateModified": "2026-03-15T16:09:00.156673",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.file"
+            },
+            "name": "measurement_setup_client1"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.stderr",
+            "@type": "File",
+            "contentSize": "164",
+            "dateCreated": "2026-03-15T16:05:33.449885",
+            "dateModified": "2026-03-15T16:05:44.216422",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.file"
+            },
+            "name": "measurement_setup_client1"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:05:33.449885",
+            "dateModified": "2026-03-15T16:05:44.216422",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.file"
+            },
+            "name": "measurement_setup_client1"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.stdout",
+            "@type": "File",
+            "contentSize": "11837",
+            "dateCreated": "2026-03-15T16:05:34.442199",
+            "dateModified": "2026-03-15T16:09:00.164673",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.file"
+            },
+            "name": "measurement_setup_client2"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.stderr",
+            "@type": "File",
+            "contentSize": "164",
+            "dateCreated": "2026-03-15T16:05:34.442199",
+            "dateModified": "2026-03-15T16:05:44.240422",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.file"
+            },
+            "name": "measurement_setup_client2"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:05:34.442199",
+            "dateModified": "2026-03-15T16:05:44.244423",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.file"
+            },
+            "name": "measurement_setup_client2"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.stdout",
+            "@type": "File",
+            "contentSize": "342",
+            "dateCreated": "2026-03-15T16:06:52.402486",
+            "dateModified": "2026-03-15T16:06:50.147198",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.command"
+            },
+            "name": "stress_cpu"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-15T16:06:52.402486",
+            "dateModified": "2026-03-15T16:06:50.179199",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.command"
+            },
+            "name": "stress_cpu"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.stdout",
+            "@type": "File",
+            "contentSize": "345",
+            "dateCreated": "2026-03-15T16:06:51.028169",
+            "dateModified": "2026-03-15T16:06:50.267203",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.command"
+            },
+            "name": "stress_cpu"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-15T16:06:51.028169",
+            "dateModified": "2026-03-15T16:06:50.295204",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.command"
+            },
+            "name": "stress_cpu"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.stdout",
+            "@type": "File",
+            "contentSize": "345",
+            "dateCreated": "2026-03-15T16:06:51.333047",
+            "dateModified": "2026-03-15T16:06:50.435210",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.command"
+            },
+            "name": "stress_cpu"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-15T16:06:51.333047",
+            "dateModified": "2026-03-15T16:06:50.467211",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.command"
+            },
+            "name": "stress_cpu"
+        },
+        {
+            "@id": "energy/dagda/energy_cpu_load.csv",
+            "@type": "File",
+            "contentSize": "2980",
+            "dateCreated": "2026-03-15T16:07:10.499780",
+            "dateModified": "2026-03-15T16:07:09.688021",
+            "description": "Energy measurement during experiment on node dagda. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.file"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "energy_cpu_load.csv"
+        },
+        {
+            "@id": "energy/elva/energy_cpu_load.csv",
+            "@type": "File",
+            "contentSize": "3021",
+            "dateCreated": "2026-03-15T16:07:10.606074",
+            "dateModified": "2026-03-15T16:07:09.684021",
+            "description": "Energy measurement during experiment on node elva. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.file"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "energy_cpu_load.csv"
+        },
+        {
+            "@id": "files/dagda/cpu_temp.csv",
+            "@type": "File",
+            "contentSize": "2613",
+            "dateCreated": "2026-03-15T16:07:10.777155",
+            "dateModified": "2026-03-15T16:07:10.776067",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.file"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "cpu_temp.csv"
+        },
+        {
+            "@id": "energy/valga/energy_cpu_load.csv",
+            "@type": "File",
+            "contentSize": "2938",
+            "dateCreated": "2026-03-15T16:07:10.797488",
+            "dateModified": "2026-03-15T16:07:10.688063",
+            "description": "Energy measurement during experiment on node valga. The measurement is done using a GUDE Power Unit providing current, voltage and power consumption values.",
+            "encodingFormat": "csv",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.file"
+            },
+            "keywords": [
+                "energy"
+            ],
+            "name": "energy_cpu_load.csv"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.stdout",
+            "@type": "File",
+            "contentSize": "493",
+            "dateCreated": "2026-03-15T16:05:44.626147",
+            "dateModified": "2026-03-15T16:07:10.892071",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.file"
+            },
+            "name": "measurement_cpu_load_client1"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-15T16:05:44.626147",
+            "dateModified": "2026-03-15T16:07:10.892071",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.file"
+            },
+            "name": "measurement_cpu_load_client1"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:05:44.626147",
+            "dateModified": "2026-03-15T16:07:10.900072",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.file"
+            },
+            "name": "measurement_cpu_load_client1"
+        },
+        {
+            "@id": "files/elva/cpu_temp.csv",
+            "@type": "File",
+            "contentSize": "2613",
+            "dateCreated": "2026-03-15T16:07:10.924841",
+            "dateModified": "2026-03-15T16:07:10.924073",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.file"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "cpu_temp.csv"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.stdout",
+            "@type": "File",
+            "contentSize": "493",
+            "dateCreated": "2026-03-15T16:05:45.611092",
+            "dateModified": "2026-03-15T16:07:11.008076",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.file"
+            },
+            "name": "measurement_cpu_load_client2"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-15T16:05:45.611092",
+            "dateModified": "2026-03-15T16:07:11.008076",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.file"
+            },
+            "name": "measurement_cpu_load_client2"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:05:45.611092",
+            "dateModified": "2026-03-15T16:07:11.008076",
+            "exampleOfWork": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.file"
+            },
+            "name": "measurement_cpu_load_client2"
+        },
+        {
+            "@id": "files/valga/cpu_temp.csv",
+            "@type": "File",
+            "contentSize": "2613",
+            "dateCreated": "2026-03-15T16:07:11.070710",
+            "dateModified": "2026-03-15T16:07:11.068079",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.file"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "cpu_temp.csv"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.stdout",
+            "@type": "File",
+            "contentSize": "493",
+            "dateCreated": "2026-03-15T16:05:46.609896",
+            "dateModified": "2026-03-15T16:07:11.168083",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.file"
+            },
+            "name": "measurement_cpu_load_client3"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-15T16:05:46.609896",
+            "dateModified": "2026-03-15T16:07:11.168083",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.file"
+            },
+            "name": "measurement_cpu_load_client3"
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:05:46.609896",
+            "dateModified": "2026-03-15T16:07:11.168083",
+            "exampleOfWork": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.file"
+            },
+            "name": "measurement_cpu_load_client3"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.stdout",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-15T16:07:11.518207",
+            "dateModified": "2026-03-15T16:07:11.968117",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.command"
+            },
+            "name": "copy_2026-03-15_16-01-05_328857"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.stderr",
+            "@type": "File",
+            "contentSize": "4",
+            "dateCreated": "2026-03-15T16:07:11.518207",
+            "dateModified": "2026-03-15T16:07:11.968117",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.command"
+            },
+            "name": "copy_2026-03-15_16-01-05_328857"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:07:11.518207",
+            "dateModified": "2026-03-15T16:07:11.968117",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.command"
+            },
+            "name": "copy_2026-03-15_16-01-05_328857"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.stdout",
+            "@type": "File",
+            "contentSize": "29039",
+            "dateCreated": "2026-03-15T16:07:12.381384",
+            "dateModified": "2026-03-15T16:09:00.160673",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.file"
+            },
+            "name": "evaluation_setup"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.stderr",
+            "@type": "File",
+            "contentSize": "164",
+            "dateCreated": "2026-03-15T16:07:12.381384",
+            "dateModified": "2026-03-15T16:07:41.485360",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.file"
+            },
+            "name": "evaluation_setup"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:07:12.381384",
+            "dateModified": "2026-03-15T16:07:41.489360",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.file"
+            },
+            "name": "evaluation_setup"
+        },
+        {
+            "@id": "files/dagda/evaluation_cpu_load.png",
+            "@type": "File",
+            "contentSize": "313083",
+            "dateCreated": "2026-03-15T16:07:44.927257",
+            "dateModified": "2026-03-15T16:07:44.925505",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.file"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "evaluation_cpu_load.png"
+        },
+        {
+            "@id": "files/dagda/evaluation_cpu_load.pdf",
+            "@type": "File",
+            "contentSize": "32976",
+            "dateCreated": "2026-03-15T16:07:45.222541",
+            "dateModified": "2026-03-15T16:07:45.221517",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.file"
+            },
+            "keywords": [
+                "pos_run",
+                "upload"
+            ],
+            "name": "evaluation_cpu_load.pdf"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.stdout",
+            "@type": "File",
+            "contentSize": "215",
+            "dateCreated": "2026-03-15T16:07:41.848935",
+            "dateModified": "2026-03-15T16:07:45.397525",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.file"
+            },
+            "name": "evaluation_generate_plot"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.stderr",
+            "@type": "File",
+            "contentSize": "0",
+            "dateCreated": "2026-03-15T16:07:41.848935",
+            "dateModified": "2026-03-15T16:07:45.397525",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.file"
+            },
+            "name": "evaluation_generate_plot"
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.status",
+            "@type": "File",
+            "contentSize": "8",
+            "dateCreated": "2026-03-15T16:07:41.848935",
+            "dateModified": "2026-03-15T16:07:45.401525",
+            "exampleOfWork": {
+                "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.file"
+            },
+            "name": "evaluation_generate_plot"
+        },
+        {
+            "@id": "http://doi.org/10.1145/3485983.3494841",
+            "@type": "CreativeWork",
+            "alternateName": "pos",
+            "citation": "http://doi.org/10.1145/3485983.3494841",
+            "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
+            "name": "Plain Orchestrating Service",
+            "version": "3.0.0"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19",
+            "@type": "WebSite",
+            "name": "Acrobat PDF 1.5"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
+            "@type": "WebSite",
+            "name": "JSON Data Format"
+        },
+        {
+            "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/",
+            "@type": [
+                "CreativeWork",
+                "Profile"
+            ],
+            "alternateName": "RISE RO-Crate Profile",
+            "name": "Research Infrastructure Shareable Experiments RO-Crate Profile",
+            "version": "0.1.0"
+        },
+        {
+            "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/anonymous"
+            },
+            "familyName": "Anonymous",
+            "givenName": "Anonymous",
+            "name": "Anonymous"
+        },
+        {
+            "@id": "https://credit.niso.org/contributor-roles/investigation/",
+            "@type": "Role",
+            "contributor": [
+                {
+                    "@id": "https://orcid.org/XXXX-XXXX-XXXX-XXXX"
+                }
+            ],
+            "roleName": "Investigation"
+        },
+        {
+            "@id": "https://ror.org/anonymous",
+            "@type": "Organization",
+            "location": "Anonym City, Anonymized",
+            "name": "Anonym University",
+            "url": "https://www.anonymized-university.com"
+        },
+        {
+            "@id": "config/allocation.json",
+            "@type": "Experiment",
+            "dateCreated": "2026-03-15T16:01:05.329094",
+            "dateModified": "2026-03-15T16:09:00.112671",
+            "encodingFormat": "application/json",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/dagda/energy_cpu_load.csv"
+                },
+                {
+                    "@id": "energy/elva/energy_cpu_load.csv"
+                },
+                {
+                    "@id": "energy/valga/energy_cpu_load.csv"
+                }
+            ],
+            "executedCommands": [
+                {
+                    "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.command"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.command"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.file"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.command"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.file"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.file"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.file"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.file"
+                },
+                {
+                    "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.file"
+                },
+                {
+                    "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.file"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.command"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.file"
+                },
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.file"
+                }
+            ],
+            "experimentController": [
+                {
+                    "@id": "http://doi.org/10.1145/3485983.3494841"
+                }
+            ],
+            "experimentNodes": [
+                {
+                    "@id": "valga.anonymous.testbed"
+                },
+                {
+                    "@id": "elva.anonymous.testbed"
+                },
+                {
+                    "@id": "dagda.anonymous.testbed"
+                }
+            ],
+            "includedOSImages": [
+                {
+                    "@id": "default/debian-trixie"
+                }
+            ],
+            "name": "anonymous_260315_160105_328857",
+            "resultData": [
+                {
+                    "@id": "files/dagda/cpu_temp.csv"
+                },
+                {
+                    "@id": "files/elva/cpu_temp.csv"
+                },
+                {
+                    "@id": "files/valga/cpu_temp.csv"
+                },
+                {
+                    "@id": "files/dagda/evaluation_cpu_load.png"
+                },
+                {
+                    "@id": "files/dagda/evaluation_cpu_load.pdf"
+                }
+            ]
+        },
+        {
+            "@id": "valga.anonymous.testbed",
+            "@type": "ExperimentNode",
+            "description": "Metadata for Testbed Node valga",
+            "hardware": {
+                "@id": "config/valga/hardware.json"
+            },
+            "name": "valga",
+            "topology": {
+                "@id": "config/valga/topology.json"
+            },
+            "visualizedTopology": {
+                "@id": "config/valga/topology.pdf"
+            }
+        },
+        {
+            "@id": "elva.anonymous.testbed",
+            "@type": "ExperimentNode",
+            "description": "Metadata for Testbed Node elva",
+            "hardware": {
+                "@id": "config/elva/hardware.json"
+            },
+            "name": "elva",
+            "topology": {
+                "@id": "config/elva/topology.json"
+            },
+            "visualizedTopology": {
+                "@id": "config/elva/topology.pdf"
+            }
+        },
+        {
+            "@id": "dagda.anonymous.testbed",
+            "@type": "ExperimentNode",
+            "description": "Metadata for Testbed Node dagda",
+            "hardware": {
+                "@id": "config/dagda/hardware.json"
+            },
+            "name": "dagda",
+            "visualizedTopology": {
+                "@id": "config/dagda/topology.pdf"
+            }
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.file",
+            "@type": "CommandFileBootstrap",
+            "contentSize": "10495",
+            "dateCreated": "2026-03-15T16:03:17.346950",
+            "dateModified": "2026-03-15T16:09:00.160673",
+            "description": "Script executed to set up the environment and install pos tools on node elva",
+            "duration": "PT4S",
+            "endTime": "2026-03-15T16:03:21.804161",
+            "executedOn": {
+                "@id": "elva.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "bootstrap"
+            ],
+            "name": "bootstrap",
+            "startTime": "2026-03-15T16:03:17.346950",
+            "status": {
+                "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/elva/2026-03-15_16-03-17_346907_bootstrap.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "default/debian-trixie",
+            "@type": "OSImage",
+            "description": "This image was generated automatically and uses debian-trixie as base.",
+            "fileSize": "571473920",
+            "name": "debian-trixie"
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.command",
+            "@type": "CommandFileReset",
+            "bootParameters": [],
+            "bootedImage": {
+                "@id": "default/debian-trixie"
+            },
+            "contentSize": "625",
+            "dateCreated": "2026-03-15T16:01:08.480839",
+            "dateModified": "2026-03-15T16:09:00.160673",
+            "description": "Shuts down the node and restarts it from the specified live image to ensure a clean system state.",
+            "duration": "PT134S",
+            "endTime": "2026-03-15T16:03:22.708433",
+            "executedOn": {
+                "@id": "elva.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "reset",
+            "startTime": "2026-03-15T16:01:08.480942",
+            "status": {
+                "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/elva/2026-03-15_16-01-08_480839_reset.stdout"
+            }
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.file",
+            "@type": "CommandFileBootstrap",
+            "contentSize": "10495",
+            "dateCreated": "2026-03-15T16:03:21.403505",
+            "dateModified": "2026-03-15T16:09:00.164673",
+            "description": "Script executed to set up the environment and install pos tools on node valga",
+            "duration": "PT4S",
+            "endTime": "2026-03-15T16:03:25.843920",
+            "executedOn": {
+                "@id": "valga.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "bootstrap"
+            ],
+            "name": "bootstrap",
+            "startTime": "2026-03-15T16:03:21.403505",
+            "status": {
+                "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2026-03-15_16-03-21_403461_bootstrap.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.command",
+            "@type": "CommandFileReset",
+            "bootParameters": [],
+            "bootedImage": {
+                "@id": "default/debian-trixie"
+            },
+            "contentSize": "629",
+            "dateCreated": "2026-03-15T16:01:08.480711",
+            "dateModified": "2026-03-15T16:09:00.164673",
+            "description": "Shuts down the node and restarts it from the specified live image to ensure a clean system state.",
+            "duration": "PT138S",
+            "endTime": "2026-03-15T16:03:26.769146",
+            "executedOn": {
+                "@id": "valga.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "reset",
+            "startTime": "2026-03-15T16:01:08.480838",
+            "status": {
+                "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2026-03-15_16-01-08_480711_reset.stdout"
+            }
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.file",
+            "@type": "CommandFileBootstrap",
+            "contentSize": "10495",
+            "dateCreated": "2026-03-15T16:05:27.456597",
+            "dateModified": "2026-03-15T16:09:00.156673",
+            "description": "Script executed to set up the environment and install pos tools on node dagda",
+            "duration": "PT4S",
+            "endTime": "2026-03-15T16:05:32.004051",
+            "executedOn": {
+                "@id": "dagda.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script",
+                "bootstrap"
+            ],
+            "name": "bootstrap",
+            "startTime": "2026-03-15T16:05:27.456597",
+            "status": {
+                "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.status"
+            },
+            "stderr": {
+                "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/dagda/2026-03-15_16-05-27_456554_bootstrap.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.command",
+            "@type": "CommandFileReset",
+            "bootParameters": [],
+            "bootedImage": {
+                "@id": "default/debian-trixie"
+            },
+            "contentSize": "629",
+            "dateCreated": "2026-03-15T16:01:08.477549",
+            "dateModified": "2026-03-15T16:09:00.144672",
+            "description": "Shuts down the node and restarts it from the specified live image to ensure a clean system state.",
+            "duration": "PT264S",
+            "endTime": "2026-03-15T16:05:33.025745",
+            "executedOn": {
+                "@id": "dagda.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "reset"
+            ],
+            "name": "reset",
+            "startTime": "2026-03-15T16:01:08.477673",
+            "status": {
+                "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.status"
+            },
+            "stderr": {
+                "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/dagda/2026-03-15_16-01-08_477549_reset.stdout"
+            }
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.file",
+            "@type": "CommandFile",
+            "contentSize": "278",
+            "dateCreated": "2026-03-15T16:05:35.421937",
+            "dateModified": "2026-03-15T16:05:44.172420",
+            "duration": "PT8S",
+            "endTime": "2026-03-15T16:05:44.104073",
+            "executedOn": {
+                "@id": "valga.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "measurement_setup_client3",
+            "startTime": "2026-03-15T16:05:35.422178",
+            "status": {
+                "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2026-03-15_16-05-35_421937_measurement_setup_client3.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.file",
+            "@type": "CommandFile",
+            "contentSize": "278",
+            "dateCreated": "2026-03-15T16:05:33.449885",
+            "dateModified": "2026-03-15T16:05:44.208421",
+            "duration": "PT10S",
+            "endTime": "2026-03-15T16:05:44.111246",
+            "executedOn": {
+                "@id": "dagda.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "measurement_setup_client1",
+            "startTime": "2026-03-15T16:05:33.450130",
+            "status": {
+                "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.status"
+            },
+            "stderr": {
+                "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/dagda/2026-03-15_16-05-33_449885_measurement_setup_client1.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.file",
+            "@type": "CommandFile",
+            "contentSize": "278",
+            "dateCreated": "2026-03-15T16:05:34.442199",
+            "dateModified": "2026-03-15T16:05:44.232422",
+            "duration": "PT9S",
+            "endTime": "2026-03-15T16:05:44.121498",
+            "executedOn": {
+                "@id": "elva.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "measurement_setup_client2",
+            "startTime": "2026-03-15T16:05:34.442352",
+            "status": {
+                "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.status"
+            },
+            "stderr": {
+                "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/elva/2026-03-15_16-05-34_442199_measurement_setup_client2.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.command",
+            "@type": "CommandFile",
+            "contentSize": "27",
+            "dateCreated": "2026-03-15T16:06:52.402486",
+            "dateModified": "2026-03-15T16:06:50.111197",
+            "duration": "PT0S",
+            "endTime": "2026-03-15T16:06:52.402486",
+            "executedOn": {
+                "@id": "dagda.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.file"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "stress_cpu",
+            "startTime": "2026-03-15T16:06:52.402486",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.stdout"
+            }
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.command",
+            "@type": "CommandFile",
+            "contentSize": "27",
+            "dateCreated": "2026-03-15T16:06:51.028169",
+            "dateModified": "2026-03-15T16:06:50.231201",
+            "duration": "PT0S",
+            "endTime": "2026-03-15T16:06:51.028169",
+            "executedOn": {
+                "@id": "elva.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.file"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "stress_cpu",
+            "startTime": "2026-03-15T16:06:51.028169",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.stdout"
+            }
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.command",
+            "@type": "CommandFile",
+            "contentSize": "27",
+            "dateCreated": "2026-03-15T16:06:51.333047",
+            "dateModified": "2026-03-15T16:06:50.391208",
+            "duration": "PT0S",
+            "endTime": "2026-03-15T16:06:51.333047",
+            "executedOn": {
+                "@id": "valga.anonymous.testbed"
+            },
+            "invokedBy": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.file"
+            },
+            "keywords": [
+                "pos_run",
+                "command"
+            ],
+            "name": "stress_cpu",
+            "startTime": "2026-03-15T16:06:51.333047",
+            "status": "finished",
+            "stderr": {
+                "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.stdout"
+            }
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.file",
+            "@type": "CommandFile",
+            "contentSize": "2313",
+            "dateCreated": "2026-03-15T16:05:44.626147",
+            "dateModified": "2026-03-15T16:07:10.884071",
+            "duration": "PT86S",
+            "endTime": "2026-03-15T16:07:10.857481",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/dagda/energy_cpu_load.csv"
+                }
+            ],
+            "executedOn": {
+                "@id": "dagda.anonymous.testbed"
+            },
+            "invokedCommands": [
+                {
+                    "@id": "scripts/dagda/2026-03-15_16-06-52_402486_stress_cpu.command"
+                }
+            ],
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "measurement_cpu_load_client1",
+            "resultData": [
+                {
+                    "@id": "files/dagda/cpu_temp.csv"
+                }
+            ],
+            "startTime": "2026-03-15T16:05:44.626389",
+            "status": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.status"
+            },
+            "stderr": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/dagda/2026-03-15_16-05-44_626147_measurement_cpu_load_client1.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.file",
+            "@type": "CommandFile",
+            "contentSize": "2313",
+            "dateCreated": "2026-03-15T16:05:45.611092",
+            "dateModified": "2026-03-15T16:07:11.000076",
+            "duration": "PT85S",
+            "endTime": "2026-03-15T16:07:10.985661",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/elva/energy_cpu_load.csv"
+                }
+            ],
+            "executedOn": {
+                "@id": "elva.anonymous.testbed"
+            },
+            "invokedCommands": [
+                {
+                    "@id": "scripts/elva/2026-03-15_16-06-51_028169_stress_cpu.command"
+                }
+            ],
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "measurement_cpu_load_client2",
+            "resultData": [
+                {
+                    "@id": "files/elva/cpu_temp.csv"
+                }
+            ],
+            "startTime": "2026-03-15T16:05:45.611274",
+            "status": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.status"
+            },
+            "stderr": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/elva/2026-03-15_16-05-45_611092_measurement_cpu_load_client2.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.file",
+            "@type": "CommandFile",
+            "contentSize": "2313",
+            "dateCreated": "2026-03-15T16:05:46.609896",
+            "dateModified": "2026-03-15T16:07:11.156083",
+            "duration": "PT84S",
+            "endTime": "2026-03-15T16:07:11.112520",
+            "energyMeasurements": [
+                {
+                    "@id": "energy/valga/energy_cpu_load.csv"
+                }
+            ],
+            "executedOn": {
+                "@id": "valga.anonymous.testbed"
+            },
+            "invokedCommands": [
+                {
+                    "@id": "scripts/valga/2026-03-15_16-06-51_333047_stress_cpu.command"
+                }
+            ],
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "measurement_cpu_load_client3",
+            "resultData": [
+                {
+                    "@id": "files/valga/cpu_temp.csv"
+                }
+            ],
+            "startTime": "2026-03-15T16:05:46.610080",
+            "status": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.status"
+            },
+            "stderr": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/valga/2026-03-15_16-05-46_609896_measurement_cpu_load_client3.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.command",
+            "@type": "CommandFileCopy",
+            "contentSize": "116",
+            "dateCreated": "2026-03-15T16:07:11.518207",
+            "dateModified": "2026-03-15T16:09:00.160673",
+            "description": "Recursively copies folder from /srv/testbed/results/anonymous/default/2026-03-15_16-01-05_328857 to evaluation_cpu_load on node dagda.",
+            "destinationPath": "evaluation_cpu_load",
+            "duration": "PT0S",
+            "endTime": "2026-03-15T16:07:11.903032",
+            "executedOn": {
+                "@id": "dagda.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "copy"
+            ],
+            "name": "copy_2026-03-15_16-01-05_328857",
+            "recursiveCopy": true,
+            "sourcePath": "/srv/testbed/results/anonymous/default/2026-03-15_16-01-05_328857",
+            "startTime": "2026-03-15T16:07:11.518387",
+            "status": {
+                "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.status"
+            },
+            "stderr": {
+                "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/dagda/2026-03-15_16-07-11_518207_copy_2026-03-15_16-01-05_328857.stdout"
+            }
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.file",
+            "@type": "CommandFile",
+            "contentSize": "218",
+            "dateCreated": "2026-03-15T16:07:12.381384",
+            "dateModified": "2026-03-15T16:07:41.481360",
+            "duration": "PT29S",
+            "endTime": "2026-03-15T16:07:41.434063",
+            "executedOn": {
+                "@id": "dagda.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "evaluation_setup",
+            "startTime": "2026-03-15T16:07:12.381651",
+            "status": {
+                "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.status"
+            },
+            "stderr": {
+                "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/dagda/2026-03-15_16-07-12_381384_evaluation_setup.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.file",
+            "@type": "CommandFile",
+            "contentSize": "4229",
+            "dateCreated": "2026-03-15T16:07:41.848935",
+            "dateModified": "2026-03-15T16:07:45.385524",
+            "duration": "PT3S",
+            "endTime": "2026-03-15T16:07:45.354535",
+            "executedOn": {
+                "@id": "dagda.anonymous.testbed"
+            },
+            "keywords": [
+                "command",
+                "script"
+            ],
+            "name": "evaluation_generate_plot",
+            "resultData": [
+                {
+                    "@id": "files/dagda/evaluation_cpu_load.png"
+                },
+                {
+                    "@id": "files/dagda/evaluation_cpu_load.pdf"
+                }
+            ],
+            "startTime": "2026-03-15T16:07:41.849258",
+            "status": {
+                "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.status"
+            },
+            "stderr": {
+                "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.stderr"
+            },
+            "stdout": {
+                "@id": "scripts/dagda/2026-03-15_16-07-41_848935_evaluation_generate_plot.stdout"
+            },
+            "variableSet": {
+                "@id": "config/2026-03-15_16-01-07_496121_variables.json"
+            }
+        },
+        {
+            "@id": "https://anonymous-4dc42.github.io/rise-ro-crate-profile/0.1.0/",
+            "@type": [
+                "CreativeWork",
+                "Profile"
+            ],
+            "alternateName": "RISE RO-Crate Profile",
+            "name": "Research Infrastructure Shareable Experiments RO-Crate Profile",
+            "version": "0.1.0"
+        },
+        {
+            "@id": "CITATION.cff",
+            "@type": "File",
+            "contentSize": "847",
+            "dateCreated": "2026-03-15T16:09:25.098333",
+            "dateModified": "2026-03-15T16:09:25.098333",
+            "description": "Citation File for this RO-Crate. See: https://citation-file-format.github.io/",
+            "name": "Citation metadata file"
+        },
+        {
+            "@id": "https://zenodo.org/",
+            "@type": "Organization",
+            "name": "Zenodo"
+        },
+        {
+            "@id": "https://doi.org/10.5281/zenodo.19035667",
+            "@type": "WebPage",
+            "dateCreated": "2026-03-15T16:09:25.059747",
+            "datePublished": "2026-03-15",
+            "identifier": "10.5281/zenodo.19035667",
+            "keywords": [
+                "measurement",
+                "cpu",
+                "load",
+                "temperature",
+                "power",
+                "consumption"
+            ],
+            "license": "cc-zero",
+            "name": "RISE Demonstration Experiment 1: Impact of CPU Load on Temperature and Power Consumption",
+            "publisher": {
+                "@id": "https://zenodo.org/"
+            }
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+#!/bin/bash
+
+set -e
+
+# Wait for all experiment nodes to be ready
+echo "Waiting for all experiment nodes to be ready"
+pos_sync --tag "before_cpu_load"
+
+# Read experiment variables
+DURATION_WARMUP=$(pos_get_variable "cpu_load/duration_warmup" --from-global)
+DURATION_MEASUREMENT=$(pos_get_variable "cpu_load/duration_measurement" --from-global)
+DURATION_COOLDOWN=$(pos_get_variable "cpu_load/duration_cooldown" --from-global)
+STRESS_CORES=$(pos_get_variable "cpu_load/stress_cores" --from-global)
+
+# Initialize CSV file for temperature measurements
+echo "Initializing CSV file for temperature measurements"
+CSV_FILE="cpu_temp.csv"
+echo "timestamp,CPU_temp_C" > "$CSV_FILE"
+
+# Find the thermal zone for the CPU package temp
+echo "Finding thermal zone for CPU package temp"
+THERMAL_ZONE=$(for z in /sys/class/thermal/thermal_zone*/; do
+  if grep -qi "x86_pkg_temp\|coretemp\|cpu" "$z/type" 2>/dev/null; then
+    echo "$z"; break
+  fi
+done)
+
+# Log CPU temperature every second in the background
+echo "Starting temperature logging in the background"
+while true; do
+  TEMP_RAW=$(cat "$THERMAL_ZONE/temp")
+  TEMP_C=$(awk "BEGIN {printf \"%.1f\", $TEMP_RAW / 1000}")
+  echo "$(date +%Y-%m-%dT%H:%M:%S.%6N),${TEMP_C}" >> "$CSV_FILE"
+  sleep 1
+done &
+TEMP_PID=$!
+
+# Start energy measurement
+echo "Starting energy measurement"
+pos_energy_start --filename energy_cpu_load.csv
+
+# Wait for the warmup duration
+echo "Waiting for warmup duration ($DURATION_WARMUP s)"
+sleep "$DURATION_WARMUP"
+
+# Start CPU load workload in the background
+echo "Starting CPU load workload ($STRESS_CORES cores)"
+pos_run "stress_cpu" -- stress-ng --cpu "$STRESS_CORES"
+
+# Wait for the experiment duration to elapse
+echo "Waiting for measurement duration ($DURATION_MEASUREMENT s)"
+sleep "$DURATION_MEASUREMENT"
+
+# Stop the CPU load workload
+echo "Stopping CPU load workload"
+pos_kill "stress_cpu"
+
+# Wait for the cooldown duration
+echo "Waiting for cooldown duration ($DURATION_COOLDOWN s)"
+sleep "$DURATION_COOLDOWN"
+
+# Stop energy measurement
+echo "Stopping energy measurement"
+pos_energy_stop
+
+# Stop temperature logging
+echo "Stopping temperature logging"
+kill "$TEMP_PID" 2>/dev/null
+wait "$TEMP_PID" 2>/dev/null || true
+
+# Upload CSV file of temperature measurements
+echo "Uploading CSV file of temperature measurements"
+pos_upload "$CSV_FILE"

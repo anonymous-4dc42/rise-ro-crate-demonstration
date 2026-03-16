@@ -1,0 +1,7 @@
+stress-ng: info:  [1897] defaulting to a 1 day run per stressor
+stress-ng: info:  [1897] dispatching hogs: 4 cpu
+stress-ng: info:  [1897] skipped: 0
+stress-ng: info:  [1897] passed: 4: cpu (4)
+stress-ng: info:  [1897] failed: 0
+stress-ng: info:  [1897] metrics untrustworthy: 0
+stress-ng: info:  [1897] successful run completed in 40.38 secs

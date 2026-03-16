@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: If you use this work, please cite it using the metadata below.
+type: dataset
+title: 'RISE Demonstration Experiment 1: Impact of CPU Load on Temperature and Power
+  Consumption'
+abstract: The experiment measured the impact of CPU load on temperature and power
+  consumption. For the measurement, we used the SLICES RI with the three experiment
+  nodes 'dagda', 'elva' and 'valga'. Each node ran stress-ng to generate CPU load
+  while recording CPU temperature and energy consumption over time.
+date-released: '2026-03-15'
+authors:
+- given-names: Anonymous
+  family-names: Anonymous
+  orcid: https://orcid.org/XXXX-XXXX-XXXX-XXXX
+  affiliation: Anonym University
+keywords:
+- measurement
+- cpu
+- load
+- temperature
+- power
+- consumption
+identifiers:
+- type: doi
+  value: 10.5281/zenodo.19035667
+  description: Publication

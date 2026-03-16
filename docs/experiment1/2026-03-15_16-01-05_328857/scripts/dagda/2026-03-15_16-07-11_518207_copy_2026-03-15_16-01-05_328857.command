@@ -1,0 +1,1 @@
+scp -r /srv/testbed/results/anonymous/default/2026-03-15_16-01-05_328857 dagda.anonymous.testbed:evaluation_cpu_load

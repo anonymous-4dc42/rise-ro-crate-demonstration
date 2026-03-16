@@ -1,0 +1,7 @@
+stress-ng: info:  [2503] defaulting to a 1 day run per stressor
+stress-ng: info:  [2503] dispatching hogs: 40 cpu
+stress-ng: info:  [2503] skipped: 0
+stress-ng: info:  [2503] passed: 40: cpu (40)
+stress-ng: info:  [2503] failed: 0
+stress-ng: info:  [2503] metrics untrustworthy: 0
+stress-ng: info:  [2503] successful run completed in 40.60 secs
