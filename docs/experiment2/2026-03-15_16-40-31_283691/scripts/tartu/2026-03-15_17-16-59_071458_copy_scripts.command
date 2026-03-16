@@ -1,0 +1,1 @@
+scp -r /srv/testbed/results/anonymous/default/2026-03-15_16-40-31_283691/scripts tartu.anonymous.testbed:/root/evaluation
